@@ -48,4 +48,40 @@
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
+    <url>
+        <loc>https://augionix.com/blogs/blogs.html</loc>
+        <lastmod>2026-06-02</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://augionix.com/blogs/ai-trends-2026.html</loc>
+        <lastmod>2026-06-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://augionix.com/blogs/zero-trust-guide.html</loc>
+        <lastmod>2026-06-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://augionix.com/blogs/saas-security-best-practices.html</loc>
+        <lastmod>2026-06-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://augionix.com/blogs/ml-threat-detection.html</loc>
+        <lastmod>2026-06-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://augionix.com/blogs/mobile-app-hardening.html</loc>
+        <lastmod>2026-06-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
 </urlset>
