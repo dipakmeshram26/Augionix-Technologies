@@ -11,73 +11,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        .tech-diagram {
-            padding: 4rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 5rem;
-            position: relative;
-            overflow: hidden;
-        }
-        .diagram-node {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 1rem;
-            padding: 1.5rem;
-            background: rgba(10, 15, 28, 0.8);
-            border: 1px solid rgba(0, 224, 255, 0.2);
-            border-radius: 12px;
-            z-index: 2;
-            text-align: center;
-            width: 200px;
-        }
-        .node-core {
-            width: 250px;
-            height: 250px;
-            border-radius: 50%;
-            border-color: var(--neon-blue);
-            box-shadow: 0 0 30px rgba(0, 224, 255, 0.2);
-            background: radial-gradient(circle, rgba(0,224,255,0.1) 0%, rgba(10,15,28,0.9) 80%);
-            justify-content: center;
-        }
-        .flow-line {
-            height: 2px;
-            flex-grow: 1;
-            background: rgba(0, 224, 255, 0.2);
-            position: relative;
-            overflow: hidden;
-            margin: 0 1rem;
-        }
-        .animated-flow::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -50%;
-            width: 50%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, var(--neon-blue), transparent);
-            animation: dataFlow 1.5s linear infinite;
-        }
-        @keyframes dataFlow {
-            0% { left: -50%; }
-            100% { left: 100%; }
-        }
-        @media (max-width: 992px) {
-            .tech-diagram { flex-direction: column; gap: 2rem; }
-            .flow-line { width: 2px; height: 50px; flex-grow: 0; margin: 1rem 0; }
-            .animated-flow::after {
-                left: 0; top: -50%; width: 100%; height: 50%;
-                background: linear-gradient(180deg, transparent, var(--neon-blue), transparent);
-                animation: dataFlowVertical 1.5s linear infinite;
-            }
-            @keyframes dataFlowVertical {
-                0% { top: -50%; } 100% { top: 100%; }
-            }
-        }
-    </style>
 </head>
 <body>
     <div class="cyber-grid"></div>
@@ -125,11 +58,11 @@
             <div class="flow-line animated-flow"></div>
 
             <div class="diagram-node node-core">
-                <svg class="icon" style="width: 60px; height: 60px;" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
-                <span style="font-family: var(--font-heading); margin-top: 10px;">AI & Machine Learning Core</span>
+                <svg class="icon icon-xl" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
+                <span class="tech-flow-node-title">AI & Machine Learning Core</span>
             </div>
 
-            <div class="flow-line animated-flow" style="animation-delay: 0.5s"></div>
+            <div class="flow-line animated-flow delay-05s"></div>
 
             <div class="diagram-node">
                 <svg class="icon" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
@@ -162,11 +95,11 @@
                 <p class="text-muted">Seamless, API-driven integration into AWS, Google Cloud, and Azure environments, ensuring your cloud applications are protected without performance degradation.</p>
             </div>
 
-            <div class="glass-panel" style="grid-column: 1 / -1;">
+            <div class="glass-panel grid-col-all">
                 <div class="text-center">
                     <svg class="icon-lg mb-2" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
                     <h3 class="mb-2">Scalable Infrastructure</h3>
-                    <p class="text-muted" style="max-width: 800px; margin: 0 auto;">Whether developing a custom SaaS application or deploying a global security perimeter, our architecture utilizes containerization (Docker/Kubernetes) and microservices to ensure infinite, on-demand scalability.</p>
+                    <p class="text-muted max-w-800">Whether developing a custom SaaS application or deploying a global security perimeter, our architecture utilizes containerization (Docker/Kubernetes) and microservices to ensure infinite, on-demand scalability.</p>
                 </div>
             </div>
         </div>
