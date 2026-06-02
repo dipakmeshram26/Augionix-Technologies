@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Host
+Host: https://augionix.com
+
+# Sitemap Location
+Sitemap: https://augionix.com/sitemap.xml
